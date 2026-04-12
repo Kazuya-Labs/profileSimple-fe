@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kazuya Store - Layanan Terpercaya untuk Chip Domino Island, Website, dan
+      Bot
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="text-slate-900 bg-gradient-to-r from-green-800 to-green-500 min-h-screen"
+  >
+    <!-- Header -->
+    <header
+      class="bg-emerald-100 text-emerald-900 shadow-md w-full sticky top-0 z-50"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-emerald-900">Kazuya Store</div>
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="#home" class="hover:text-green-600 transition">Beranda</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-green-600 transition"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-green-600 transition"
+              >Tentang Kami</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-green-600 transition"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+        <button class="md:hidden" onclick="toggleMenu()">☰</button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <ul class="px-6 py-4 space-y-2">
+          <li>
+            <a href="#home" class="block hover:text-green-600">Beranda</a>
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-green-600">Layanan</a>
+          </li>
+          <li>
+            <a href="#about" class="block hover:text-green-600">Tentang Kami</a>
+          </li>
+      
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-white h-screen py-20">
+      <img
+        id="profile-picture"
+        src="./src/assets/profile.png"
+        alt="Domino Island"
+        class="profile-picture rounded-full border-4 shadow-xl border-emerald-300 aspect-square w-48 mx-auto mb-8 object-cover"
+      />
+      <!-- PROFILE PICTURE -->
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl font-bold mb-4 text-white">Kazuya Store</h1>
+        <p class="text-xl mb-8 text-emerald-100">
+          Toko terpercaya untuk kebutuhan chip Domino Island. Kami Juga Siap
+          Menampung Chip Higs Domino Island Kalian Dengan Harga Terbaik!
+        </p>
+        <a
+          href="#services"
+          class="bg-emerald-300 text-emerald-900 px-8 py-3 rounded-full animate-bounce duration-300 ease-in font-semibold hover:bg-emerald-950 hover:text-emerald-300 border border-emerald-950 transition"
+          >Jelajahi Layanan Kami</a
+        >
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl text-white  font-bold text-center mb-12">Layanan Kami</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="fade-item bg-emerald-100 border border-emerald-900 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition text-emerald-950"
+          >
+            <div class="text-6xl mb-4">
+              <img
+                src="./src/assets/top-up.jpeg"
+                alt=""
+                class="aspect-square object-cover border border-emerald-950 mx-auto rounded-full"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Top Up Chip</h3>
+            <p class="text-emerald-950">
+              Kami menjual chip higs domino island dengan harga terjangkau.
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div
+            class="service-card fade-item bg-emerald-100 border border-emerald-900 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition"
+          >
+            <div class="text-6xl mb-4">
+              <img
+                src="./src/assets/produc.jpeg"
+                alt=""
+                class="aspect-square object-cover border border-emerald-950 mx-auto rounded-full"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Terima Bongkaran</h3>
+            <p class="text-emerald-950">
+              Kami Menerima bongkaran chip higs domino island dengan harga
+              terbaik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Tentang Kazuya Store</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Kazuya Store adalah toko online yang menyediakan layanan top up chip
+          Domino Island dengan harga terjangkau. Kami berkomitmen untuk
+          memberikan pengalaman terbaik bagi pelanggan kami dengan layanan yang
+          cepat, aman, dan terpercaya. Selain itu, kami juga menerima bongkaran
+          chip dengan harga terbaik di pasaran. Bergabunglah dengan ribuan
+          pelanggan puas kami dan nikmati layanan terbaik dari Kazuya Store!
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <h3 class="text-center font-bold text-5xl my-2 mx-2">Kazuya Store</h3>
+      <div class="grid md:grid-cols-2 items-center gap-3 text-wrap mb-4 mx-2">
+        <div class="text-gray-400 mx-2">
+          <h3 class="text-xl font-semibold text-gray-100">Location</h3>
+          <p class="flex mx-1">
+            <i class="mx-1"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                /></svg></i
+            >Jl. Setia Budi Selatan, Jakarta, Indonesia
+          </p>
+        </div>
+        <div class="text-gray-400 py-6 mx-2 flex flex-col space-y-1">
+          <h3 class="text-xl font-semibold text-gray-100">Contact</h3>
+          <div class="flex mx-1">
+            <i class="mx-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                />
+              </svg>
+            </i>
+            <p>kazuyatechnologies@gmail.com</p>
+          </div>
+          <div class="flex mx-1">
+            <i class="mx-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                />
+              </svg> </i
+            >6285728153452
+          </div>
+        </div>
+        <div class="text-gray-400 mx-2 flex flex-col space-y-1">
+          <h3 class="text-xl font-semibold text-gray-100">Follow Us</h3>
+          <a href="#">Instagram: @kazuya.png</a>
+          <a href="#">Twitter: @kazuyatech_ </a>
+        </div>
+      </div>
+      <div class="container w-full text-center">
+        <p>&copy; 2026 Kazuya Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <a
+      href="https://wa.me/6282123456789?text=Halo%20Kazuya%20Store%2C%20saya%20ingin%20tanya%20layanan%20Anda"
+      class="whatsapp-cta animate-bounce duration-300 ease-in-out"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Chat WhatsApp"
+    >
+      <span class="whatsapp-icon" aria-hidden="true"
+        ><svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+            fill="#ffffff"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+            fill="#ffffff"
+          /></svg
+      ></span>
+    </a>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
